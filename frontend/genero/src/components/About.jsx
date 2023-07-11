@@ -19,7 +19,7 @@ export const About = () => {
         </a>
         <div className="card__info">
           <span className="card__category">Faciliter Les Dons Entre Particuliers</span>
-          <h5 className="card__title">Genero vise à rendre le processus de don plus facile et accessible à tous. L'application permet aux utilisateurs de donner des objets et de la nourriture dont ils n'ont plus besoin ou qu'ils souhaitent partager avec d'autres personnes dans le besoin.</h5>
+          <h5 className="card__title">Genero facilite le don d'objets et de nourriture. Ellle rend le processus simple et accessible à tous. Les utilisateurs peuvent partager les articles dont ils n'ont plus besoin avec ceux qui en ont besoin. Une solution pratique pour aider les personnes dans le besoin et promouvoir le partage.</h5>
           
         </div>
       </article>

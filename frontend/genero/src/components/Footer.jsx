@@ -2,6 +2,8 @@ import React from 'react';
 import "../styles/Footer.css";
 
 export default function Footer() {
+  const userLoggedIn = localStorage.getItem("user");
+
   return (
     <div>
       <footer className="footer">
@@ -35,7 +37,9 @@ export default function Footer() {
         </ul>
         <ul className="menu">
           <li className="menu__item"><a className="menu__link" href="/Home">Accueil</a></li>
-          <li className="menu__item"><a className="menu__link" href="/Article">Article</a></li>
+          {userLoggedIn && ( // Ajout de cette condition pour afficher le lien uniquement si l'utilisateur est connecté
+            <li className="menu__item"><a className="menu__link" href="/Article">Article</a></li>
+          )}
           <li className="menu__item"><a className="menu__link" href="/Blog">Blog</a></li>
           <li className="menu__item"><a className="menu__link" href="/Apropos">A propos</a></li>
           <li className="menu__item"><a className="menu__link" href="/Contact">Contact</a></li>
@@ -45,4 +49,5 @@ export default function Footer() {
     </div>
   );
 }
+
 

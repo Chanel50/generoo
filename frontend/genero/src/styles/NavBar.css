@@ -127,6 +127,13 @@
 
   .fnav{color: #fff;}
 
-
+  .text-white {
+    margin: 25px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
 }
+}
+
 

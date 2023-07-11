@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
 import "../styles/ArticlesF.css";
 import  {Objet} from '../components/Objet';
@@ -31,7 +31,7 @@ const useStyles = makeStyles ({
     
   }); 
 
-const ArticlesF = () => {
+const ArticlesF = ({searchArticles}) => {
     const [ titre, setTitre ] = React.useState('');
     const [ Description, setDescription ] = React.useState('');
     const [ categorie, setCategorie ] = React.useState('');
@@ -82,7 +82,7 @@ const ArticlesF = () => {
             console.log(err)
         })
     }
-
+ 
     const handleDelete = (id) => {
         axios.delete(`http://localhost:8000/api/cruds/${id}`)
              .then((res) => {
@@ -108,7 +108,9 @@ const ArticlesF = () => {
     // const handleNext = () => {
     //     setCurrPage(prev => prev + 1)
     // }
-
+    useEffect(() => {
+        if(searchArticles.length > 0) setCrud(searchArticles)
+    })
     const handleAdd = (e) => {
         e.preventDefault()
         const formData = new FormData(e.target);

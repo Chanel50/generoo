@@ -14,6 +14,8 @@ import { Articler } from "./components/Articler";
 import { Avenir } from "./components/Avenir";
 import { Cancer } from "./components/Cancer";
 import Login from './components/Login';
+import Loginadmin from './components/Loginadmin';
+import {Dashboard} from './components/Dashboard';
 import Register from './components/Register';
 import  Notfaund  from "./components/Notfaund";
 
@@ -37,6 +39,8 @@ function App() {
             <Route path="/Avenir" element={<Avenir />} />
             <Route path="/Cancer" element={<Cancer />} />
             <Route path="/Login" element={<Login />} />
+            <Route path="/Loginadmin" element={<Loginadmin />} />
+            <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="/Register" element={<Register />} />
             <Route path="/Notfaund" element={<Notfaund />} />
           </Routes>

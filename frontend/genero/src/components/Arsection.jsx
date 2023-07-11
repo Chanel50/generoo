@@ -13,7 +13,7 @@ export const Arsection = () => {
           <div className="d-grid d-sm-flex justify-content-center gap-2">
         
           </div>
-          <div className="mbt">  <a href="/Article" className="btny">Article</a></div>
+        
         </div>
 
         {/* Background Shape */}

@@ -16,11 +16,29 @@
     background-repeat: no-repeat;
     background-position: center;
   
-    opacity: 0.75;
+
       height: 400px;
+      opacity: 0; /* Ajout d'une opacité initiale à 0 */
+  transform: translateY(20px); /* Ajout d'un décalage initial de 20px vers le bas */
+  animation-name: fadeAndSlide; /* Nom de l'animation */
+  animation-duration: 1s; /* Durée de l'animation */
+  animation-delay: 0.5s; /* Délai de démarrage de l'animation */
+  animation-fill-mode: forwards; /* Maintenir les styles de fin d'animation */
   
   
-  
+  }
+
+ 
+/* Définition de l'animation */
+@keyframes fadeAndSlide {
+    0% {
+      opacity: 0; /* Opacité initiale */
+      transform: translateY(20px); /* Décalage initial */
+    }
+    100% {
+      opacity: 1; /* Opacité finale */
+      transform: translateY(0); /* Pas de décalage */
+    }
   }
 
   /* Media query for screens smaller than 600px */
