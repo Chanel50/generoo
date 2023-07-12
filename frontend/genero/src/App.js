@@ -16,6 +16,7 @@ import { Cancer } from "./components/Cancer";
 import Login from './components/Login';
 import Loginadmin from './components/Loginadmin';
 import {Dashboard} from './components/Dashboard';
+import Profile from './components/Profile';
 import Register from './components/Register';
 import  Notfaund  from "./components/Notfaund";
 
@@ -41,6 +42,7 @@ function App() {
             <Route path="/Login" element={<Login />} />
             <Route path="/Loginadmin" element={<Loginadmin />} />
             <Route path="/Dashboard" element={<Dashboard />} />
+            <Route path="/Profile" element={<Profile />} />
             <Route path="/Register" element={<Register />} />
             <Route path="/Notfaund" element={<Notfaund />} />
           </Routes>

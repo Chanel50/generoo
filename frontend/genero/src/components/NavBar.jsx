@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { BiLogOut } from "react-icons/bi";
 import { BiUserCircle } from "react-icons/bi";
+import { RiUserSettingsLine } from "react-icons/ri";
 import "../styles/NavBar.css";
 
 function NavBar() {
@@ -22,6 +23,9 @@ function NavBar() {
     localStorage.clear();
     navigate("/Login");
   }
+  const goToProfile = () => {
+    navigate('/Profile');
+  };
 
   const handleClick = () => setClick(!click);
 
@@ -96,6 +100,14 @@ function NavBar() {
                         className="py-2 px-4 flex items-center gap-2 shadow-md rounded-md bg-amber-400 hover:bg-gray-200 transition-colors text-gray-50 hover:cursor-pointer hover:shadow-none hover:text-gray-600"
                       >
                         Logout <BiLogOut />
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        onClick={goToProfile}
+                        className="py-2 px-4 flex items-center gap-2 shadow-md rounded-md bg-amber-400 hover:bg-gray-200 transition-colors text-gray-50 hover:cursor-pointer hover:shadow-none hover:text-gray-600"
+                      >
+                        Profile <RiUserSettingsLine className="ic" />
                       </button>
                     </li>
                   </ul>

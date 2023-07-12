@@ -1,7 +1,9 @@
 .a:hover{
   color: #fff;
 }
-
+.ic{
+  color: white;
+}
 .navbar {
   background-color: #f5b921;
   height: 80px;
