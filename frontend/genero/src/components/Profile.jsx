@@ -1,14 +1,13 @@
-
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const Profile = ({id}) => {
+const Profile = ({ id }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 

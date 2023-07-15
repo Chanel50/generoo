@@ -16,7 +16,13 @@
 
 
 }
-
+.containera2{
+  background:rgba(0,0,0,0.6);
+  padding:5rem 3rem;
+  color:#fff;
+  display:block;
+  width:75%
+}
 .sp {
   color: #fff;
   font-size: 35px;
@@ -24,7 +30,7 @@
 }
 
 .aptitle{
-
+margin: 20px;
   text-align: center;
   font-size: 40px;
  

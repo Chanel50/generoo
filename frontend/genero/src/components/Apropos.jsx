@@ -9,7 +9,7 @@ export const Apropos = () => {
   return (
     <div>
       <div className="container2">
-      
+      <div className="containera2">
         <h2 className="aptitle">Donner une autre vie à vos objets et partager votre nourriture</h2>
         <p className="sp">N'hésitez pas à télécharger dès maintenant cette application pour commencer à partager et à faire une différence.</p>
         <div className="containera">
@@ -37,6 +37,7 @@ export const Apropos = () => {
               </div>
             </a>
           </div>
+        </div>
         </div>
       </div>
 
