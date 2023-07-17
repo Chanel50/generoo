@@ -15,11 +15,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import axios from 'axios';
 import "../styles/Objet.css";
 
-
 const useStyles = makeStyles({
-   
     userCard: {
-      width: '250px',
+      width: '270px',
       height: 'max-content',
       borderRadius: '10px',
       boxShadow: '5px 5px 30px black',
@@ -76,7 +74,6 @@ const useStyles = makeStyles({
       width: '200px',
       height: '200px',
       margin: '8px 0 0 0',
-      borderRadius: '50%',
       border: '4px solid white',
       objectFit: 'cover'
     },
@@ -191,19 +188,26 @@ const useStyles = makeStyles({
     };
     
     return (
-    <div>
-        
+    <div style={{display:"flex", alignItem:"center", justifayContent:"space-between", flexWrap:"wrap" }}>
       {crud && (
-        <Card className={classes.userCard}>
+        <Card className={classes.userCard}
+        style={{
+          width:avatarSize === 'large' && "650px",
+          height:avatarSize === 'large' && "650px",
+
+          
+        }}
+        
+        >
+        
           <CardContent>
             <Box className={classes.userCardTop}>
-            <Avatar
+            <img
           alt="profileImg"
           src={`http://localhost:8000/uploads/${crud.image}`}
           className={`${classes.avatar} ${avatarSize === 'large' ? classes.largeAvatar : ''}`}
-          style={{position: avatarSize === 'large' && "absolutely"   , width:avatarSize === 'large' && "500 px" , height:avatarSize === 'large' &&"500px" }}
-          
-    onClick={handleAvatarClick}
+          style={{ width:avatarSize === 'large' ? "300px" :"300px" , height:avatarSize === 'large' &&"300px" , borderRadius:avatarSize === 'large' &&"none !important"}}
+             onClick={handleAvatarClick}
     
     
         />

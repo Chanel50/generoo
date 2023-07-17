@@ -31,10 +31,11 @@ function NavBar() {
 
   return (
     <nav className="navbar">
+    <a href="/" className="mlogo-link">
       <img className="mlogo" src="/images/Genero.png" alt="mlogo" />
+    </a>
       <div className="nav-container">
         <NavLink exact to="/" className="nav-logo">
-          {/* Add your logo or other elements here */}
         </NavLink>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">

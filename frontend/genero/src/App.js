@@ -1,6 +1,4 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
 import { BrowserRouter as Router,  Route, Routes } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Article } from "./components/Article";
@@ -15,19 +13,26 @@ import { Avenir } from "./components/Avenir";
 import { Cancer } from "./components/Cancer";
 import Login from './components/Login';
 import Loginadmin from './components/Loginadmin';
+import ContactTable from './components/ContactTable';
+import UserTable from './components/UserTable';
+import ArticleTable from './components/ArticleTable';
 import {Dashboard} from './components/Dashboard';
 import Profile from './components/Profile';
 import Register from './components/Register';
 import  Notfaund  from "./components/Notfaund";
+import MainLayout from "./Layout/MainLayout";
 
 function App() {
   return (
     <>
       <Router>
-        <NavBar />
+       
 
         
           <Routes>
+            
+        <Route path="/" element={<MainLayout />} >
+
             <Route path="/" element={<Home />} />
             <Route path="/Article" element={<Article />} />
             <Route path="/Blog" element={<Blog />} />
@@ -39,26 +44,36 @@ function App() {
             <Route path="/Articler" element={<Articler />} />
             <Route path="/Avenir" element={<Avenir />} />
             <Route path="/Cancer" element={<Cancer />} />
+            <Route path="/Profile" element={<Profile />} />
+
+        </Route>
+        <Route path="/Dashboard" element={<Dashboard />} >
+
+         <Route path="ContactTable" element={<ContactTable />} />
+         <Route path="UserTable" element={<UserTable />} />
+         <Route path="ArticleTable" element={<ArticleTable />} />
+
+         </Route>
+        
             <Route path="/Login" element={<Login />} />
             <Route path="/Loginadmin" element={<Loginadmin />} />
-            <Route path="/Dashboard" element={<Dashboard />} />
-            <Route path="/Profile" element={<Profile />} />
+            <Route path="/ContactTable" element={<ContactTable />} />
+            <Route path="/UserTable" element={<UserTable />} />
+            <Route path="/ArticleTable" element={<ArticleTable/>} />
+            <Route path="/Dashboard" element={<Dashboard />}/>
             <Route path="/Register" element={<Register />} />
             <Route path="/Notfaund" element={<Notfaund />} />
+
+
           </Routes>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-        <Footer />
+
+        
+        
+          
+         
       </Router>
   </>
   );
 }
 
 export default App;
-

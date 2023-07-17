@@ -282,11 +282,11 @@ const ArticlesF = ({searchArticles}) => {
                 </Dialog>
           </Container>
           <div style={{display: 'flex', justifyContent:'center', alignItems: 'center'}}> 
-            <Grid container spacing={2} className={classes.gridContainer}  >
+            <Grid  container spacing={2} className={classes.gridContainer}  >
                 {
                     crud.map((crud) => {
                     return (
-                            <Grid item  xs={12}  sm={6} md={4} xl={3} className={classes.innerGrid} key = {crud.id} >
+                            <Grid  item  xs={12}  sm={6} md={4} xl={3} className={classes.innerGrid} key = {crud.id} >
                                 <Objet getPaginatedData={getPaginatedData} crud={crud} handleDelete={handleDelete} />
                             </Grid>
                     )

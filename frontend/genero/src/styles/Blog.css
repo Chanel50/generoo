@@ -45,23 +45,32 @@ strong {
 .article-featured {
    margin: 20px;
 }
+
+.widget-title{
+  font-size: 30px;
+  margin: 20px;
+}
 .article-read-more,
 .article-info {
     font-size: .875rem;
 }
 
 .article-read-more {
-    color: #f5b921;
+    color: #4f86c6;
     text-decoration: none;
     font-weight: 700;
 }
 .article-read-more:hover,
 .article-read-more:focus {
-    color: #f5b921;
+    color: #4f86c6;
     text-decoration: underline;
 }
 .article-info {
     margin: 2em 0;
+}
+.widget-recent-post-title{
+  font-weight: bold;
+ margin: 5px;
 }
 header{
   padding: 2em 0;

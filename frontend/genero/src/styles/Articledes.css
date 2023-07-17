@@ -1,9 +1,16 @@
 .des{
     display: flex;
     text-align: center;
-    color: black;
+    color: white;
     font-weight: bold;
     margin: 20px;
+}
+.containera22{
+  background:rgba(0,0,0,0.4);
+  
+  color:#fff;
+  display:block;
+  width:75%;
 }
 
 .container22{

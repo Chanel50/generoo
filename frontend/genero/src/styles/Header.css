@@ -13,7 +13,9 @@
   background-position: center;
 }
 
-
+.header-title{
+  color: #FFF;
+}
 /* Button Styles */
 
 .containerbut {
