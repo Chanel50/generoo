@@ -32,33 +32,33 @@ const ArticleTable = () => {
   };
 
   return (
-    <div>
+    <div className='overflow-x-scroll'>
       <h1 className="text-2xl font-bold mb-4">Article Table</h1>
       <table className="w-full bg-white border border-gray-200">
         <thead>
-          <tr>
-            <th className="p-2 text-amber-400">Title</th>
-            <th className="p-2 text-amber-400">Description</th>
-            <th className="p-2 text-amber-400">Category</th>
-            <th className="p-2 text-amber-400">Disponibilité</th>
-            <th className="p-2 text-amber-400">État de l'objet</th>
-            <th className="p-2 text-amber-400">Adresse</th>
-            <th className="p-2 text-amber-400">Téléphone</th>
-            <th className="p-2 text-amber-400">Image</th>
-            <th className="p-2 text-amber-400">Actions</th>
+          <tr className=''>
+            <th className="p-2 bg-amber-400 text-white border">Title</th>
+            <th className="bg-amber-400 text-white border">Description</th>
+            <th className="bg-amber-400 text-white border">Category</th>
+            <th className="p-2 bg-amber-400 text-white border">Disponibilité</th>
+            <th className="p-2 bg-amber-400 text-white border">État de l'objet</th>
+            <th className="p-2 bg-amber-400 text-white border">Adresse</th>
+            <th className="p-2 bg-amber-400 text-white border">Téléphone</th>
+            <th className="p-2 bg-amber-400 text-white border">Image</th>
+            <th className="p-2 bg-amber-400 text-white border">Actions</th>
           </tr>
         </thead>
         <tbody>
           {cruds?.current?.map(crud => {
-           return  <tr key={crud._id}>
-              <td className="p-2">{crud.titre}</td>
-              <td className="p-2">{crud.Description}</td>
-              <td className="p-2">{crud.categorie}</td>
-              <td className="p-2">{crud.Disponibilité}</td>
-              <td className="p-2">{crud.etat_objet}</td>
-              <td className="p-2">{crud.adresse}</td>
-              <td className="p-2">{crud.telephone}</td>
-              <td className="p-2">
+           return  <tr className="hover:bg-gray-50" key={crud._id}>
+              <td className="p-2 border">{crud.titre}</td>
+              <td className="p-2 border">{crud.Description}</td>
+              <td className="p-2 border">{crud.categorie}</td>
+              <td className="p-2 border">{crud.Disponibilité}</td>
+              <td className="p-2 border">{crud.etat_objet}</td>
+              <td className="p-2 border">{crud.adresse}</td>
+              <td className="p-2 border">{crud.telephone}</td>
+              <td className="p-2 border">
                 <img src={`http://localhost:8000/uploads/${crud.image}`} alt={crud.titre} className="h-8 w-8" />
               </td>
               <td className="p-2">

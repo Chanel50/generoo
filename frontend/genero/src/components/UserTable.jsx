@@ -33,23 +33,23 @@ const UserTable = () => {
       <table className="w-full bg-white border border-gray-200">
         <thead>
           <tr>
-            <th className="p-2 text-amber-400">Name</th>
-            <th className="p-2 text-amber-400">Email</th>
-            <th className="p-2 text-amber-400">Telephone</th>
-            <th className="p-2 text-amber-400">Date of Birth</th>
-            <th className="p-2 text-amber-400">Genre</th>
-            <th className="p-2 text-amber-400">Action</th>
+            <th className="p-2 bg-amber-400 text-white border">Name</th>
+            <th className="p-2 bg-amber-400 text-white border">Email</th>
+            <th className="p-2 bg-amber-400 text-white border">Telephone</th>
+            <th className="p-2 bg-amber-400 text-white border">Date of Birth</th>
+            <th className="p-2 bg-amber-400 text-white border">Genre</th>
+            <th className="p-2 bg-amber-400 text-white border">Action</th>
           </tr>
         </thead>
         <tbody>
           {users.map(user => (
-            <tr key={user._id}>
-              <td className="p-2">{user.name}</td>
-              <td className="p-2">{user.email}</td>
-              <td className="p-2">{user.telephone}</td>
-              <td className="p-2">{user.date_de_naissance}</td>
-              <td className="p-2">{user.genre}</td>
-              <td className="p-2">
+            <tr className="hover:bg-gray-50" key={user._id}>
+              <td className="p-2 border">{user.name}</td>
+              <td className="p-2 border">{user.email}</td>
+              <td className="p-2 border">{user.telephone}</td>
+              <td className="p-2 border">{user.date_de_naissance}</td>
+              <td className="p-2 border">{user.genre}</td>
+              <td className="p-2 border">
                 <button
                   onClick={() => deleteUser(user._id)}
                   className="px-4 py-2 bg-amber-400 text-white rounded hover:bg-amber-400"

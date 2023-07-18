@@ -15,6 +15,7 @@ import Login from './components/Login';
 import Loginadmin from './components/Loginadmin';
 import ContactTable from './components/ContactTable';
 import UserTable from './components/UserTable';
+import StatisticsCard from './components/StatisticsCard';
 import ArticleTable from './components/ArticleTable';
 import {Dashboard} from './components/Dashboard';
 import Profile from './components/Profile';
@@ -52,6 +53,7 @@ function App() {
          <Route path="ContactTable" element={<ContactTable />} />
          <Route path="UserTable" element={<UserTable />} />
          <Route path="ArticleTable" element={<ArticleTable />} />
+         <Route path="StatisticsCard" element={<StatisticsCard />} />
 
          </Route>
         

@@ -259,7 +259,8 @@ const ArticlesF = ({searchArticles}) => {
                            
                         
                             <Box className={classes.margin}>
-                                <TextField
+                                <input
+                                className="file-input file-input-bordered file-input-warning w-full max-w-xs"
                                 color="secondary"
                                 type="file"
                                 name="image"
